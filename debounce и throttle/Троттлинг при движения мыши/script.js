@@ -6,7 +6,7 @@ const throttle = (fn, delay) => {
   return event => {
     if (isThrottled) return;
 
-    fr(event);
+    fn(event);
     isThrottled = true;
 
     setTimeout(() => {
