@@ -1,4 +1,4 @@
-Задача 6: Таймер обратного отсчета
+Задача 8: Таймер обратного отсчета
 
 Контекст
 Представь, что ты разрабатываешь модуль для интернет-магазина.
@@ -26,7 +26,7 @@ const timer = createCountdownTimer(5);
 
 timer.start();
 setTimeout(() => console.log(timer.getTimeLeft()), 3000); // 2 (через 3 секунды)
-setTimeout(() => timer.stop(), 4000); // Остановка на 4-й секунде
+setTimeout(() => timer.stop(), 3000); // Остановка на 4-й секунде
 setTimeout(() => console.log(timer.getTimeLeft()), 6000); // 2 (таймер не уменьшился после stop)
 
 Подсказка
