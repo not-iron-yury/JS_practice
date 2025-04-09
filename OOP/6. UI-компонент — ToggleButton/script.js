@@ -33,7 +33,7 @@ class Button {
   }
 }
 
-// Вариант 1 (сложный)
+// Вариант 1 (Cложный)
 class ToggleButton1 extends Button {
   constructor(labelOn, labelOff, initialState = false) {
     super('', () => this.toggle()); // только срелочная функция
@@ -54,7 +54,7 @@ class ToggleButton1 extends Button {
   }
 }
 
-// Вариант 2 (простой)
+// Вариант 2 (Упрощённый)
 class ToggleButton2 extends Button {
   constructor(labelOn, labelOff, initialState = false) {
     const initialLabel = initialState ? labelOn : labelOff;
@@ -76,3 +76,7 @@ toggle1.render(document.body); // Выкл
 
 const toggle2 = new ToggleButton2('Вкл', 'Выкл', true);
 toggle2.render(document.body); // Вкл
+
+// Разница:
+// Вариант1 - гибче, полный контроль, легче развивать
+// Вариант2 - проще читается, использует возможности родителя, легче писать
